@@ -1,0 +1,81 @@
+.nav-bar
+	animation appear 1s 1
+	background color1
+	center()
+	display block
+	height bar-height
+	margin-top top-height
+	position relative	
+	width containers-width
+	& .menu
+		width 100%
+		& .menu-item
+			height bar-height
+			text-align center
+			vertical-align-top()
+			&:hover
+				background color2
+			@media screen and (max-width: 520px)
+				font-size .9em
+				margin 0
+				padding 0
+				width 22%
+		& a
+			color general-word-color
+			display table-cell
+			height bar-height
+			text-decoration none
+			vertical-align middle	
+			width 100px	
+		& .selected
+			background color2	
+			
+
+.bar
+	animation appear 1s 1
+	background color3
+	center()
+	display block
+	margin-top top-height
+	position relative
+	width containers-width
+	& .search
+		height 2em
+		margin .5em
+		width 60%
+		@media screen and (max-width: 1200px)
+			width 50%
+		@media screen and (max-width: 950px)
+			width 40%
+		@media screen and (max-width: 800px)
+			display block
+			margin-left 8%
+			width 80%	
+	& .bar-button
+		position absolute
+		background color2
+		color general-word-color
+		cursor pointer
+		height 1em
+		margin-top .5em
+		padding .5em
+		text-align center
+		text-decoration none
+		width 8em
+		&:hover
+			background color4
+		@media screen and (max-width: 800px)
+			border-bottom .2em solid color4
+			font-size .9em
+			margin 0
+			padding .5em 0
+			width 100%
+			position static
+	& .selected
+		background color1
+	& .bar-item
+		vertical-align-top()
+	& .search-button
+		right 13em
+	& .login-button
+		right 2em

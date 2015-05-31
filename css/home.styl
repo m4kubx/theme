@@ -1,0 +1,160 @@
+@import 'settings'
+@import 'header'
+
+.preview
+	position relative
+	& .main-image
+		background color4
+		display block
+		margin-top top-height
+		center()
+		position relative
+		width containers-width
+		& img
+			center()
+			max-height 400px
+			vertical-align-top()
+			width 70%
+			@media screen and (max-width: 750px)
+				width 100%
+		& figcaption
+			color general-word-color
+			padding 2%
+			text-align justify
+			vertical-align-top()
+			width 25%
+			word-wrap break-word
+			@media screen and (max-width: 750px)
+				width 50%
+	& .preview-price
+		animation lighting 2s infinite
+		background color1
+		font-size 4em
+		font-weight bold
+		position absolute
+		text-align center
+		transform rotate(-10deg)
+		top 70%
+		right 15%
+		width 17%
+		&:before
+			content attr(data-simbol)
+		&:after
+			content attr(data-cents)
+			font-size .5em
+			position absolute
+			top 0	
+		@media screen and (max-width: 1050px)
+			right 11%
+			width 22%
+		@media screen and (max-width: 750px)
+			top 80%
+			width 30%
+
+.daily-deals 
+	background color5
+	center()
+	height 11em
+	margin-top top-height*2
+	position relative
+	width containers-width
+	& .daily-deals-title
+		background color5
+		top -1em
+		position absolute
+		&:after
+			content: ""
+			border-top 1em solid transparent
+			border-right 1em solid transparent
+			//border-bottom 1em solid transparent
+			border-left 1em solid color5
+			width 0em
+			height 0em
+			position absolute
+	& .product
+		margin-left .5%
+		height 11em
+		vertical-align-top()	
+		width 19%
+		&:hover span
+				background color3
+		& .product-image
+			height 8em	
+			margin-top .5em
+			width 100%
+		& span
+			background color2
+			center()
+			font-size 2em
+			font-weight bold
+			margin-top .1em
+			position relative
+			text-align center
+			vertical-align-top()
+			width 100%
+			&:before
+				content attr(data-simbol)
+			&:after
+				content attr(data-cents)
+				font-size .5em
+				position absolute
+				top 0
+		@media screen and (max-width: 900px)
+			margin-left 0.3%
+		@media screen and (max-width: 650px)
+			margin 0
+			width 49%
+			&:last-child
+				display none
+		@media screen and (max-width: 300px)
+			width 100%
+	@media screen and (max-width: 650px)
+			height auto
+		
+			
+.brands 
+	background color5
+	center()
+	height 9em
+	margin-top top-height*2
+	width containers-width
+	position relative
+	& .brands-title
+		background color5
+		top -1em
+		position absolute
+		&:after
+			content: ""
+			border-top 1em solid transparent
+			border-right 1em solid transparent
+			//border-bottom 1em solid transparent
+			border-left 1em solid color5
+			width 0em
+			height 0em
+			position absolute
+	& .brand
+		margin-left .5%
+		height 11em
+		vertical-align-top()	
+		width 19%
+		& .brand-image
+			height 8em	
+			margin-top .5em
+			width 100%
+		& span
+			background color3
+			center()
+			color general-word-color
+			font-size 1em
+			font-weight bold
+			margin-top .1em
+			position relative
+			text-align center
+			vertical-align-top()
+			width 100%
+			top -1em
+		@media screen and (max-width: 900px)
+			margin-left 0.3%
+	@media screen and (max-width: 650px)
+		display none
+			

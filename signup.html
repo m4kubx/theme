@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<title>SIGN UP</title>
+	<link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+	<!-- <header></header> -->
+	<nav class="nav-bar">
+		<ul class="menu">
+			<li class="menu-item"><a href="index.html">Home</a></li>
+			<li class="menu-item"><a href="#">My Account</a></li>
+			<li class="menu-item"><a href="#">Cart</a></li>
+			<li class="menu-item"><a href="#">Checkout</a></li>
+		</ul>	
+	</nav>
+
+	<section class="bar">
+		<input type="text" class="search bar-item">
+		<a href="#" class="bar-button bar-item search-button">Search</a>
+		<a href="#" class="bar-button bar-item login-button selected">Login / Sign Up</a>
+	</section>
+
+	<section class="content">
+		<section class="login auth">
+			<form class="form" action="#" method="get">
+				<h3 class="tittle">Login</h3>
+				
+				<label for="login-email" class="field">Email:</label> 
+				<input type="email" name="login-email" id="login-email" class="field" required>
+
+				<label for="login-password" class="field">Password:</label> 
+				<input type="password" name="login-password" id="login-password" class="field" required>
+
+				<input type="submit" class="submit" value="Enviar">
+			</form>
+		</section>
+		<section class="signup auth">
+			<form class="form" action="#" method="get">
+				<h3 class="tittle">Sign Up</h3>
+
+				<label for="signup-fullname" class="field">Fullname:</label> 
+				<input type="text" name="signup-fullname" id="signup-fullname" class="field" required>
+
+				<label for="signup-email" class="field">Email:</label> 
+				<input type="email" name="signup-email" id="signup-email" class="field" required>
+
+				<label for="signup-email2" class="field">Confirm Email:</label> 				
+				<input type="email" name="signup-email2" id="signup-email2" class="field" required>
+
+				<label for="signup-password" class="field">Password:</label> 
+				<input type="password" name="signup-password" id="signup-password" class="field" required>
+
+				<label for="signup-password2" class="field">Confirm Password:</label> 
+				<input type="password" name="signup-password2" id="signup-password2" class="field" required>
+				
+				<input type="submit" class="submit" value="Enviar">
+
+			</form>
+		</section>
+	</section>
+	<!-- <footer></footer> -->
+<script src="./js/jquery.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

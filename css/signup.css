@@ -1,0 +1,414 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+html {
+  font-family: arial;
+  background-color: #bae0e9;
+}
+@-moz-keyframes appear {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav-bar {
+  -webkit-animation: appear 1s 1;
+  -moz-animation: appear 1s 1;
+  -ms-animation: appear 1s 1;
+  -o-animation: appear 1s 1;
+  animation: appear 1s 1;
+  background: #236170;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 3em;
+  margin-top: 1em;
+  position: relative;
+  width: 80%;
+}
+.nav-bar .menu {
+  width: 100%;
+}
+.nav-bar .menu .menu-item {
+  height: 3em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+.nav-bar .menu .menu-item:hover {
+  background: #237052;
+}
+@media screen and (max-width: 520px) {
+  .nav-bar .menu .menu-item {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    width: 22%;
+  }
+}
+.nav-bar .menu a {
+  color: #eee;
+  display: table-cell;
+  height: 3em;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100px;
+}
+.nav-bar .menu .selected {
+  background: #237052;
+}
+.bar {
+  -webkit-animation: appear 1s 1;
+  -moz-animation: appear 1s 1;
+  -ms-animation: appear 1s 1;
+  -o-animation: appear 1s 1;
+  animation: appear 1s 1;
+  background: #703223;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 1em;
+  position: relative;
+  width: 80%;
+}
+.bar .search {
+  height: 2em;
+  margin: 0.5em;
+  width: 60%;
+}
+@media screen and (max-width: 1200px) {
+  .bar .search {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .bar .search {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bar .search {
+    display: block;
+    margin-left: 8%;
+    width: 80%;
+  }
+}
+.bar .bar-button {
+  position: absolute;
+  background: #237052;
+  color: #eee;
+  cursor: pointer;
+  height: 1em;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 8em;
+}
+.bar .bar-button:hover {
+  background: #1c5a42;
+}
+@media screen and (max-width: 800px) {
+  .bar .bar-button {
+    border-bottom: 0.2em solid #1c5a42;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    position: static;
+  }
+}
+.bar .selected {
+  background: #236170;
+}
+.bar .bar-item {
+  display: inline-block;
+  vertical-align: top;
+}
+.bar .search-button {
+  right: 13em;
+}
+.bar .login-button {
+  right: 2em;
+}
+.content {
+  background: #237052;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20em;
+  margin-top: 1em;
+  position: relative;
+  width: 80%;
+}
+.content .auth {
+  background: #1c5a42;
+  height: 17em;
+  min-height: 2em;
+  padding: 1em 0.5em 0 0.5em;
+  position: absolute;
+  top: 1em;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+@media screen and (max-width: 825px) {
+  .content .auth {
+    display: block;
+    margin: 1em auto;
+    position: static;
+    width: 90%;
+  }
+}
+.content .auth .tittle {
+  color: #eee;
+  margin-bottom: 1em;
+}
+.content .auth .field {
+  margin-bottom: 0.5em;
+  padding: 0.3em 0.3em;
+  display: inline-block;
+  vertical-align: top;
+  width: 11em;
+}
+@media screen and (max-width: 1063px) {
+  .content .auth .field {
+    width: 9em;
+  }
+}
+@media screen and (max-width: 824px) {
+  .content .auth .field {
+    width: 13em;
+  }
+}
+@media screen and (max-width: 563px) {
+  .content .auth .field {
+    width: 8.5em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .content .auth .field {
+    width: 95%;
+  }
+}
+.content .auth .submit {
+  display: block;
+  height: 3em;
+  margin-top: 1em;
+  margin-left: 18em;
+}
+@media screen and (max-width: 1063px) {
+  .content .auth .submit {
+    margin-left: 13.5em;
+  }
+}
+@media screen and (max-width: 824px) {
+  .content .auth .submit {
+    margin-left: 22em;
+  }
+}
+@media screen and (max-width: 563px) {
+  .content .auth .submit {
+    margin-left: 12em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .content .auth .submit {
+    margin-left: 0;
+    position: static;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .content .auth {
+    height: auto;
+    padding-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 825px) {
+  .content {
+    height: auto;
+    padding: 0.5em 0;
+  }
+}
+.content .login {
+  left: 2%;
+}
+.content .signup {
+  right: 2%;
+}
